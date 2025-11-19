@@ -30,3 +30,6 @@ jobs:
       
       - name: ZIP
         run: zip -r zip.zip .
+
+      - name: Better Test Reports Action
+        uses: mridang/action-test-reporter@v1.7.0
