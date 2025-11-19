@@ -33,5 +33,9 @@ jobs:
 
       - name: Better Test Reports Action
         uses: mridang/action-test-reporter@v1.7.0
+        with:
+          name: JEST Tests            # Name of the check run which will be created
+          path: reports/jest-*.xml    # Path to test results
+          reporter: jest-junit        # Format of test results
 
 
