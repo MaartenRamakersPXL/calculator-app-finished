@@ -32,7 +32,7 @@ jobs:
         run: zip -r zip.zip .
 
       - name: Better Test Reports Action
-        uses: mridang/action-test-reporter@v2
+        uses: dorny/test-reporter@v2
         with:
           name: JEST Tests            # Name of the check run which will be created
           path: reports/jest-*.xml    # Path to test results
